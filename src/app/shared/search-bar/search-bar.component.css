@@ -1,0 +1,20 @@
+.search-bar{
+    /* background-color: aqua; */
+    display:flex;
+    position: relative;
+    width: 100%;
+}
+
+.search-bar__icon{
+    font-size: 16px;
+    margin: 0 var(--margin-X-xs);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-bar__input{
+    padding: var(--padding-Y-xs) var(--margin-X-m) var(--padding-Y-xs) var(--padding-X-xs);
+    width: 100%;
+}

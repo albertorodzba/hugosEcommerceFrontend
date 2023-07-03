@@ -1,1 +1,114 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*Reset*/
+/* @import url(./reset.css); */
+
+:root {
+  --primary-color: #30427e;
+  --secondary-color: #cc2a2d;
+  --primary-color-subtle: #908cb8;
+  --primary-color-emphasis: #605b8b;
+  --gray-subtle: #d8d8d8;
+  --border-size: 1px;
+  --border-color: #a7a7a7;
+  --border-radius-l: 10px;
+  --border-radius-s: 2px;
+  --black: #0f0f0f;
+  --white: white;
+  --selected: var(--primary-color);
+
+  --margin-X-l: 3em;
+  --margin-Y-l: 3em;
+  --margin-X-s: 1em;
+  --margin-Y-s: 1em;
+  --margin-X-xs: 0.5em;
+  --margin-Y-xs: 0.5em;
+  --margin-X-m: 2em;
+  --margin-Y-m: 2em;
+
+  --padding-X-l: 3em;
+  --padding-Y-l: 3em;
+  --padding-X-s: 1em;
+  --padding-Y-s: 1em;
+  --padding-X-xs: 0.5em;
+  --padding-Y-xs: 0.5em;
+  --padding-X-m: 2em;
+  --padding-Y-m: 2em;
+  
+  --padding-input: 0.5em;
+  --font-size-standard: 16px;
+  --font-size-medium: 24px;
+  --font-size-large: 32px;
+
+  --breakpoint-m: 940px;
+  --breakpoint-s: 540px;
+}
+
+@font-face {
+  font-family: TTCommonsExtraLight;
+  src: url(./assets/fonts/TT_Commons/TT_Commons_ExtraLight.otf)
+    format("opentype");
+}
+
+@font-face {
+  font-family: TTCommonsBold;
+  src: url(./assets/fonts/TT_Commons/TT_Commons_Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: TTCommonsRegular;
+  src: url(./assets/fonts/TT_Commons/TT_Commons_Regular.otf) format("opentype");
+}
+
+html,
+body {
+  font-family: "TTCommonsRegular";
+  font-weight: 100;
+
+  height: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+textarea,select {
+  border: var(--border-size) solid var(--border-color);
+  border-radius: var(--border-radius-l);
+  outline: 1px var(--selected);
+  padding: var(--padding-Y-xs) var(--padding-X-xs);
+}
+
+ul,
+li {
+  /* background-color: #605b8b; */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+  text-align: center;
+}
+
+
+.form-group{
+  margin-bottom: var(--margin-Y-s);
+  width: 100%;
+}
+
+.form-group__title, .form-group__label{
+  /* background-color: #605b8b; */
+  margin-bottom: var(--margin-Y-xs);
+}

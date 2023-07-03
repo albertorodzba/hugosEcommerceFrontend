@@ -1,0 +1,49 @@
+<div class="navbar">
+  <div class="navbar__top">
+    <img src="assets/img/Logo_temporal.jpg" alt="logo" class="navbar__logo" />
+    <app-search-bar class="navbar__search-bar"></app-search-bar>
+    <h3 class="navbar__phonenumber">Ph: (817) 724-7627</h3>
+    <p>Screen size {{windowWidth}}</p>
+  </div>
+
+  <div #navbarBottom class="navbar__bottom">
+    <ul class="navbar__order-options">
+      <li routerLink="/shop/start-order" class="navbar__order-option">
+        <a class="navbar__a">Start order</a>
+      </li>
+      <li routerLink="/shop/insta-quote" class="navbar__order-option">
+        <a class="navbar__a">Insta quote</a>
+      </li>
+    </ul>
+    <ul #navbarMenuOptions class="navbar__menu-options">
+      <li routerLink="" class="navbar__menu-option">
+        <a class="navbar__a">Home</a>
+      </li>
+      <hr *ngIf="isMenuOpen">
+      <li class="navbar__menu-option"><a class="navbar__a">Shop</a></li>
+      <hr *ngIf="isMenuOpen">
+      <li class="navbar__menu-option"><a class="navbar__a">Gallery</a></li>
+      <hr *ngIf="isMenuOpen">
+      <li routerLink="/about-us" class="navbar__menu-option">
+        <a class="navbar__a">About us</a>
+      </li>
+      <hr *ngIf="isMenuOpen">
+    <li class="navbar__menu-option"><a class="navbar__a">Contact us</a></li>
+    </ul>
+
+    <span
+      class="material-icons-outlined navbar__menu-icon"
+      (click)="ChangeMenuVisibility()"
+    >
+      menu
+    </span>
+    <div
+      #navbarMenu
+      class="navbar__menu"
+      [ngClass]="{
+        'navbar__menu--visible': isMenuOpen == true,
+        'navbar__menu--invisible': isMenuOpen == false
+      }"
+    ></div>
+  </div>
+</div>

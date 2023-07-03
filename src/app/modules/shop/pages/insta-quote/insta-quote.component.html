@@ -1,0 +1,71 @@
+<div class="container">
+    <form [formGroup]="instaQuoteForm" class="form">
+        <div class="form-group">
+            <h1 class="form__title">Insta quote</h1>
+            <h2 class="form__p form__p--product">Product</h2>
+            <select  formControlName="shirtModelSelected" (change)="OnValueChange()">
+                <option *ngFor="let tshirtModel of tshirtModels" [value]="tshirtModel.model">{{tshirtModel.model}}</option>
+            </select>
+            <p class="form__p form__p--sku">SKU: {{shirtSelected.sku}} </p>
+        </div>
+
+        <div class="form-group">
+            <h2 class="form-group__title">Type of process</h2>
+            
+            <input formControlName="processType" value="screenprinting" type="radio" class="form-group__input-radio" id="screenprinting" />
+            <label for="screenprinting" class="form-group__label form-group__label--radio">Screenprinting</label>
+           
+            <input formControlName="processType" value="embroidery" type="radio" class="form-group__input-radio" id="Embroidery" />
+            <label for="Embroidery" class="form-group__label form-group__label--radio">Embroidery</label>
+            
+            <input formControlName="processType" value="dtf" type="radio" class="form-group__input-radio" id="DTF" />
+            <label for="DTF" class="form-group__label form-group__label--radio">DTF</label>
+        </div>
+
+        <div class="form-group">
+
+            <h2 class="form-group__label">How many Items?</h2>
+
+            <input #itemsQuantity formControlName="itemsQuantity" type="number" class="form-group__input-text" (change)="AlwaysZero()" (keyup)="OnValueChange()"/>
+        </div>
+
+        <div class="form-group form-group--two-columns">
+            <h2 class="form-group__title">How many colors are in your design?</h2>
+            <div class="form-group__column">
+                <label for="" class="form-group__label ">Front</label>
+                <input #frontColorQuantity formControlName="frontColorQuantity" type="number" class="form-group__input-text" (change)="AlwaysZero()" (keyup)="OnValueChange()"/>
+            </div>
+
+            <div class="form-group__column">
+                <label for="" class="form-group__label ">Back</label>
+                <input #backColorQuantity formControlName="backColorQuantity" type="number" class="form-group__input-text" (change)="AlwaysZero()" (keyup)="OnValueChange()"/>
+            </div>
+
+        </div>
+
+        <table class="form__table">
+            <tr class="table__row">
+                <th class="table__header">Quantity</th>
+                <th class="table__header">Piece</th>
+                <th class="table__header">Total</th>
+            </tr>
+
+            <tr class="table__row">
+                <td class="table__cell">{{shirtQuantity}}</td>
+                <td class="table__cell">{{shirtModel}} {{shirtSelected.sku}}</td>
+                <td class="table__cell">{{total}}</td>
+            </tr>
+
+        </table>
+        <p class="form__p form__p--message">* This is a estimate, the final price may vary slightly because the type of
+            process
+            and the sizes of the items, pluz sizes 2xl and larger cost slightly more per piece</p>
+
+        <div  class="form-group">
+            <label for="" class="form-group__label">
+                <h2>E-mail a his quote</h2>
+            </label>
+            <input  formControlName="emailQuote" type="text" class="form-group__input-text" id="" />
+        </div>
+    </form>
+</div>

@@ -1,0 +1,31 @@
+:host{
+}
+
+.container{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    margin-top: var(--margin-Y-l);
+    height: 100%;
+}
+
+.contact{
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius-l);
+
+    display:flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: center;
+    padding: var(--padding-X-);
+    text-align: center;
+    width: 40vh;
+}
+.contact *{
+    color: var(--white);
+}
+.contact__image-whatsapp{
+    height: 20%;
+}
+
