@@ -40,7 +40,7 @@
 }
 
 .navbar__menu-option:hover {
-  background-color: #b5b5b5;
+  background-color: var(--menubar-hover);
 }
 
 .navbar__order-option {

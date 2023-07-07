@@ -15,20 +15,29 @@
         <a class="navbar__a">Insta quote</a>
       </li>
     </ul>
+
     <ul #navbarMenuOptions class="navbar__menu-options">
       <li routerLink="" class="navbar__menu-option">
         <a class="navbar__a">Home</a>
       </li>
+
       <hr *ngIf="isMenuOpen">
+
       <li class="navbar__menu-option"><a class="navbar__a">Shop</a></li>
+
       <hr *ngIf="isMenuOpen">
-      <li class="navbar__menu-option"><a class="navbar__a">Gallery</a></li>
+
+      <li routerLink="/gallery" class="navbar__menu-option"><a class="navbar__a">Gallery</a></li>
+
       <hr *ngIf="isMenuOpen">
+      
       <li routerLink="/about-us" class="navbar__menu-option">
         <a class="navbar__a">About us</a>
       </li>
+
       <hr *ngIf="isMenuOpen">
-    <li class="navbar__menu-option"><a class="navbar__a">Contact us</a></li>
+
+      <li class="navbar__menu-option"><a class="navbar__a">Contact us</a></li>
     </ul>
 
     <span

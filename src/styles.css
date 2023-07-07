@@ -6,12 +6,14 @@
 :root {
   --primary-color: #30427e;
   --secondary-color: #cc2a2d;
+  --secondary-color-emphasis: #a72325;
   --primary-color-subtle: #908cb8;
   --primary-color-emphasis: #605b8b;
   --gray-subtle: #d8d8d8;
   --border-size: 1px;
   --border-color: #a7a7a7;
   --border-radius-l: 10px;
+  --border-radius-m: 5px;
   --border-radius-s: 2px;
   --black: #0f0f0f;
   --white: white;
@@ -19,6 +21,8 @@
 
   --margin-X-l: 3em;
   --margin-Y-l: 3em;
+  --margin-X-xl: 5em;
+  --margin-Y-xl: 5em;
   --margin-X-s: 1em;
   --margin-Y-s: 1em;
   --margin-X-xs: 0.5em;
@@ -28,6 +32,8 @@
 
   --padding-X-l: 3em;
   --padding-Y-l: 3em;
+  --padding-X-xl: 5em;
+  --padding-Y-xl: 5em;
   --padding-X-s: 1em;
   --padding-Y-s: 1em;
   --padding-X-xs: 0.5em;
@@ -42,21 +48,31 @@
 
   --breakpoint-m: 940px;
   --breakpoint-s: 540px;
+  --breakpoint-xs: 320px;
+  
+
+  --banner-height: 25rem;
+  --banner-fontsize-xl: 5em;
+  --banner-fontsize-l: 4em;
+  --banner-fontsize-m: 3em;
+  --banner-fontsize-s: 2em;
+
+  --menubar-hover:#b5b5b5 ;
 }
 
 @font-face {
-  font-family: TTCommonsExtraLight;
+  font-family: "TTCommonsExtraLight";
   src: url(./assets/fonts/TT_Commons/TT_Commons_ExtraLight.otf)
     format("opentype");
 }
 
 @font-face {
-  font-family: TTCommonsBold;
+  font-family: "TTCommonsBold";
   src: url(./assets/fonts/TT_Commons/TT_Commons_Bold.otf) format("opentype");
 }
 
 @font-face {
-  font-family: TTCommonsRegular;
+  font-family: "TTCommonsRegular";
   src: url(./assets/fonts/TT_Commons/TT_Commons_Regular.otf) format("opentype");
 }
 
@@ -111,4 +127,8 @@ li {
 .form-group__title, .form-group__label{
   /* background-color: #605b8b; */
   margin-bottom: var(--margin-Y-xs);
+}
+
+p,h1,h2,h3,h4{
+  text-align: center;
 }
