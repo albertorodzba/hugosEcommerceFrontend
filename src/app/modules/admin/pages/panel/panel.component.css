@@ -1,0 +1,25 @@
+.container{
+    padding: var(--padding-Y-l) var(--padding-X-l);
+}
+
+.form{}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-right: var(--margin-X-l);
+    /* width: auto; */
+}
+
+.form-group:last-child{
+    margin-right: 0;
+}
+
+.form-group__label{
+    margin-bottom: var(--margin-Y-s)
+}
+
+.form__dynamic-form {
+    border: 1px solid var(--gray-subtle);
+    border-radius: var(--border-radius-m);
+    padding: var(--padding-X-xs);
+}

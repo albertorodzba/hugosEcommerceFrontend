@@ -11,9 +11,9 @@
       <li routerLink="/shop/start-order" class="navbar__order-option">
         <a class="navbar__a">Start order</a>
       </li>
-      <li routerLink="/shop/insta-quote" class="navbar__order-option">
+      <!-- <li routerLink="/shop/insta-quote" class="navbar__order-option">
         <a class="navbar__a">Insta quote</a>
-      </li>
+      </li> -->
     </ul>
 
     <ul #navbarMenuOptions class="navbar__menu-options">
@@ -37,7 +37,7 @@
 
       <hr *ngIf="isMenuOpen">
 
-      <li class="navbar__menu-option"><a class="navbar__a">Contact us</a></li>
+      <li routerLink="/contact-us" class="navbar__menu-option"><a class="navbar__a">Contact us</a></li>
     </ul>
 
     <span

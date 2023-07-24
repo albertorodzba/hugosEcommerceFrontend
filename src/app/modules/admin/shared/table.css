@@ -1,0 +1,30 @@
+.table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table__row{
+    border: 1px solid var(--white);
+    height: 2em;
+}
+
+ .table__header{
+    background-color: var(--primary-color);
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: var(--padding-Y-xs) var(--padding-X-xs);
+    text-align: center;
+}
+
+
+.table__description{
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    color: var(--black);
+    padding: var(--padding-Y-xs) var(--padding-X-xs);
+    text-align: center;
+}
+
+.table-container{
+    overflow: scroll;
+}

@@ -1,2 +1,7 @@
                   "maximumWarning": "2kb",
                   "maximumError": "4kb"
+
+NOTAS:
+    Componentes identificados:
+        - El banner, debería ser un componente en shared
+        - Las tablas que se usaran para mostrar la info, tambien

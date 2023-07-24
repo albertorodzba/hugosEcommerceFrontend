@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 
 
@@ -11,7 +12,8 @@ import { GalleryComponent } from './pages/gallery/gallery.component';
   declarations: [
     HomeComponent,
     AboutUsComponent,
-    GalleryComponent
+    GalleryComponent,
+    ContactUsComponent
   ],
   imports: [
     CommonModule,
