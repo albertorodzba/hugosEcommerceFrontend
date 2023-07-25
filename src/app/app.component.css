@@ -2,3 +2,37 @@
     height: 100%;
 
 }
+
+.container__image{
+    margin-bottom: 40px;
+    width: 60%;
+}
+
+.container__title{
+    font-size: 50px;
+}
+
+.container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .container__title{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container__title{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .container__title{
+        font-size: 20px;
+    }
+}

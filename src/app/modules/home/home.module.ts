@@ -5,6 +5,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { InConstructionPageComponent } from './components/in-construction-page/in-construction-page.component';
 
 
 
@@ -13,7 +14,8 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
     HomeComponent,
     AboutUsComponent,
     GalleryComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    InConstructionPageComponent
   ],
   imports: [
     CommonModule,
