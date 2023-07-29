@@ -97,6 +97,14 @@
   margin-bottom: var(--margin-Y-s);
 }
 
+.form__button{
+  border: none;
+  border-radius: var(--border-radius-l);
+  background-color: var(--secondary-color );
+  color: white;
+  padding: var(--padding-Y-s) var(--padding-X-s);
+}
+
 /*Query for this page*/
 @media screen and (max-width: 1200px) {
     .content {

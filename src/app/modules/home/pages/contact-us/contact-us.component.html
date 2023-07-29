@@ -50,7 +50,7 @@
           Leave your message and upload your design, we'll get back to you
           shortly
         </p>
-        <form class="form" autocomplete="off">
+        <form class="form" autocomplete="off" (ngSubmit)="OnSubmit()">
             <div class="form-group">
                 <input type="text" class="form__input-text" placeholder="Name" />
                 
@@ -82,9 +82,9 @@
                 than 10 MB
             </p>
             <div class="form-group">
-                <input type="file" class="form__input-text form__input-text--file" />
+                <input (change)="ValidateFile($event)" type="file" class="form__input-text form__input-text--file" />
             </div>
-          <button type="button" class="form__button">SUBMIT</button>
+          <button type="button" class="form__button">Submit</button>
         </form>
       </div>
     </div>

@@ -9,188 +9,180 @@
     </div>
 
     <!--Menu bar-->
-    <div class="products__menu">
+    <!-- <div class="products__menu">
         
         <ul class="products__options">
     
             <li class="products__option"><a class="products__a">Apparel</a></li>
     
-            <!-- <hr *ngIf="isMenuOpen"> -->
+            <hr *ngIf="isMenuOpen"> 
     
             <li class="products__option"><a class="products__a">Bussines Cards</a></li>
     
-            <!-- <hr *ngIf="isMenuOpen"> -->
+            <hr *ngIf="isMenuOpen"> 
             
             <li class="products__option">
             <a class="products__a">Marketing Materials</a>
             </li>
     
-            <!-- <hr *ngIf="isMenuOpen"> -->
+            <hr *ngIf="isMenuOpen"> 
     
             <li class="products__option"><a class="products">Signs & Banners</a></li>
             
-            <!-- <hr *ngIf="isMenuOpen"> -->
+            <hr *ngIf="isMenuOpen">
             
             <li class="products__option"><a class="products">Stickers & Labels</a></li>
         </ul>
-    </div>
+    </div> -->
 
-    
-    <div class="general-products">
-        <!--BESTSELLERS-->
+    <div class="sub-container">
+
+        <aside class="side-menu">
+
+            <div class="side-menu__category">
         
-        <h4 class="bestsellers__title">Bestsellers</h4>
-        <div class="bestsellers">
-    
-            <span class="bestsellers__icon material-icons-outlined">
-                arrow_back_ios
-            </span>
+                <div class="side-menu__title-container side-menu__title-container--red">
+                    <h2 class="side-menu__h2">{{'Apparel'}}</h2>
+                </div>
 
-            <div class="bestsellers__products-container">
-    
-    
-                <div class="bestsellers__item">
-                    <img src="" alt="" class="bestsellers__image">
-                    <p class="bestsellers__p bestsellers__p--model">{{models[0]}}</p>
-                    <p class="bestsellers__p bestsellers__p--description">this is a description of product</p>
-                    
-                    <div class="bestsellers__colors">
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                    </div>
-                </div>
-                <div class="bestsellers__item">
-                    <img src="" alt="" class="bestsellers__image">
-                    <p class="bestsellers__p bestsellers__p--model">{{models[1]}}</p>
-                    <p class="bestsellers__p bestsellers__p--description">this is a description of product</p>
-                    
-                    <div class="bestsellers__colors">
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                    </div>
-                </div>
-                <div class="bestsellers__item">
-                    <img src="" alt="" class="bestsellers__image">
-                    <p class="bestsellers__p bestsellers__p--model">{{models[2]}}</p>
-                    <p class="bestsellers__p bestsellers__p--description">this is a description of product</p>
-                    
-                    <div class="bestsellers__colors">
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                    </div>
-                </div>
-                <div *ngIf="windowWidth > 865 || windowWidth < 700" class="bestsellers__item">
-                    <img src="" alt="" class="bestsellers__image">
-                    <p class="bestsellers__p bestsellers__p--model">{{models[3]}}</p>
-                    <p class="bestsellers__p bestsellers__p--description">this is a description of product</p>
-                    
-                    <div class="bestsellers__colors">
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                    </div>
-                </div>
-                <div *ngIf="windowWidth > 1220" class="bestsellers__item">
-                    <img src="" alt="" class="bestsellers__image">
-                    <p class="bestsellers__p bestsellers__p--model">{{models[4]}}</p>
-                    <p class="bestsellers__p bestsellers__p--description">this is a description of product</p>
-                    
-                    <div class="bestsellers__colors">
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                    </div>
-                </div>
-                <div *ngIf="windowWidth > 1220" class="bestsellers__item">
-                    <img src="" alt="" class="bestsellers__image">
-                    <p class="bestsellers__p bestsellers__p--model">{{models[4]}}</p>
-                    <p class="bestsellers__p bestsellers__p--description">this is a description of product</p>
-                    
-                    <div class="bestsellers__colors">
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                        <div class="bestsellers__color"></div>
-                    </div>
-                </div>
-    
+                <p *ngFor="let item of apparel" class="side-menu__item">{{item}}</p>
+                
             </div>
-            <span class="bestsellers__icon material-icons-outlined">
-                arrow_forward_ios
-            </span>
-        </div>
 
-        <!--START DESIGNING BUTTON-->
-        <button class="general-products__button"><h1 class="general-products__h2">START DESIGNING RIGHT NOW!</h1></button>
-    
-        <section class="apparel-products-section">
-
-            <!--GRID APPAREL PRODUCTS-->
-            <h2 class="general-products__title">
-                Apparel Products
-            </h2>
-
-            <div class="apparel-products">
-                <div class="apparel-products__product apparel-products__product--left-top">
-                    <img class="apparel-products__image" src="/assets/img/home/apparel_products/Short_sleeve.jpg" alt="" >
-                    <h1 class="apparel-products__h1">Short Sleeve</h1>
-                </div>
-                <div class="apparel-products__product ">
-                    <img class="apparel-products__image" src="/assets/img/home/apparel_products/vneck2.jpg" alt="" >
-                    <h1 class="apparel-products__h1">V Neck</h1>
-                </div>
-                <div class="apparel-products__product ">
-                    <img class="apparel-products__image" src="/assets/img/home/apparel_products/ladies2.jpg" alt="" >
-                    <h1 class="apparel-products__h1">Ladies</h1>
-                </div>
-                <div class="apparel-products__product apparel-products__product--right-top">
-                    <img class="apparel-products__image" src="/assets/img/home/apparel_products/pocket.jpg" alt="" >
-                    <h1 class="apparel-products__h1">With Pocket</h1>
-                </div>
-                <div class="apparel-products__product apparel-products__product--left-bottom">
-                    <img class="apparel-products__image" src="/assets/img/home/apparel_products/Kids.jpg" alt="" >
-                    <h1 class="apparel-products__h1">Youth/Infant</h1>
-                </div>
-                <div class="apparel-products__product ">
-                    <img class="apparel-products__image" src="/assets/img/home/apparel_products/performance2.jpg" alt="" >
-                    <h1 class="apparel-products__h1">Performance</h1>
-                </div>
-                <div class="apparel-products__product">
-                    <img class="apparel-products__image" src="/assets/img/home/apparel_products/cappp3.jpg" alt="" >
-                    <h1 class="apparel-products__h1">Caps & Hats</h1>
-                </div>
-                <div class="apparel-products__product apparel-products__product--right-bottom">
-                    <img class="apparel-products__image" src="/assets/img/home/apparel_products/polo.jpg" alt="" >
-                    <h1 class="apparel-products__h1">Polos</h1>
-                </div>
-            </div>
+            <div class="side-menu__category">
         
-        </section>
+                <div class="side-menu__title-container side-menu__title-container--blue">
+                    <h2 class="side-menu__h2">{{'Marketing Products'}}</h2>
+                </div>
 
-        <!--SECOND GRID, OTHER PRODUCTS-->
-       <section class="other-products-section">
-            <h1 class="other-products-section__title">Cuztomized marketing materials and signage for your Business 
-            </h1>
+                <p *ngFor="let item of marketingProducts" class="side-menu__item">{{item}}</p>
+                
+            </div>
+
+            <div class="side-menu__category ">
+        
+                <div class="side-menu__title-container side-menu__title-container--green">
+                    <h2 class="side-menu__h2">{{'Grand Format'}}</h2>
+                </div>
+
+                <p *ngFor="let item of grandFormat; let i = index" class="side-menu__item">{{item}}</p>
+                
+            </div>
+              
+        </aside>
+
+        
+         
+        <div class="general-products">
+            <!--BESTSELLERS-->
+            
+            <h4 class="bestsellers__title">Bestsellers</h4>
+            <div class="bestsellers">
+        
+                <span class="bestsellers__icon material-icons-outlined">
+                    arrow_back_ios
+                </span>
+    
+                <div class="bestsellers__products-container">
+        
+        
+                    <div class="bestsellers__item">
+                        <img src="" alt="" class="bestsellers__image">
+                        <p class="bestsellers__p bestsellers__p--model">{{models[0]}}</p>
+                        <p class="bestsellers__p bestsellers__p--description">this is a description of product</p>
+                        
+                        <div class="bestsellers__colors">
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                        </div>
+                    </div>
+                    <div class="bestsellers__item">
+                        <img src="" alt="" class="bestsellers__image">
+                        <p class="bestsellers__p bestsellers__p--model">{{models[1]}}</p>
+                        <p class="bestsellers__p bestsellers__p--description">this is a description of product</p>
+                        
+                        <div class="bestsellers__colors">
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                        </div>
+                    </div>
+                    <div class="bestsellers__item">
+                        <img src="" alt="" class="bestsellers__image">
+                        <p class="bestsellers__p bestsellers__p--model">{{models[2]}}</p>
+                        <p class="bestsellers__p bestsellers__p--description">this is a description of product</p>
+                        
+                        <div class="bestsellers__colors">
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                        </div>
+                    </div>
+                    <div *ngIf="windowWidth > 865 || windowWidth < 700" class="bestsellers__item">
+                        <img src="" alt="" class="bestsellers__image">
+                        <p class="bestsellers__p bestsellers__p--model">{{models[3]}}</p>
+                        <p class="bestsellers__p bestsellers__p--description">this is a description of product</p>
+                        
+                        <div class="bestsellers__colors">
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                        </div>
+                    </div>
+                    <div *ngIf="windowWidth > 1220" class="bestsellers__item">
+                        <img src="" alt="" class="bestsellers__image">
+                        <p class="bestsellers__p bestsellers__p--model">{{models[4]}}</p>
+                        <p class="bestsellers__p bestsellers__p--description">this is a description of product</p>
+                        
+                        <div class="bestsellers__colors">
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                        </div>
+                    </div>
+                    <div *ngIf="windowWidth > 1220" class="bestsellers__item">
+                        <img src="" alt="" class="bestsellers__image">
+                        <p class="bestsellers__p bestsellers__p--model">{{models[4]}}</p>
+                        <p class="bestsellers__p bestsellers__p--description">this is a description of product</p>
+                        
+                        <div class="bestsellers__colors">
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                            <div class="bestsellers__color"></div>
+                        </div>
+                    </div>
+        
+                </div>
+                <span class="bestsellers__icon material-icons-outlined">
+                    arrow_forward_ios
+                </span>
+            </div>
+
+            <!--SECOND GRID, OTHER PRODUCTS-->
+           <section class="other-products-section">
+            <div class="other-products-section__title-container">
+                <h1 class="other-products-section__title">Cuztomized marketing materials and signage for your Business 
+                </h1>
+            </div>
 
            <div class="other-products">
                <div class="product">
@@ -211,7 +203,60 @@
                </div>
            </div>
        </section>
+
+    
+            <!--START DESIGNING BUTTON-->
+            <button class="general-products__button"><h1 class="general-products__h2">START DESIGNING RIGHT NOW!</h1></button>
+        
+            <section class="apparel-products-section">
+    
+                <!--GRID APPAREL PRODUCTS-->
+                <h2 class="general-products__title">
+                    Apparel Products
+                </h2>
+    
+                <div class="apparel-products">
+                    <div class="apparel-products__product apparel-products__product--left-top">
+                        <img class="apparel-products__image" src="/assets/img/home/apparel_products/Short_sleeve.jpg" alt="" >
+                        <h1 class="apparel-products__h1">Short Sleeve</h1>
+                    </div>
+                    <div class="apparel-products__product ">
+                        <img class="apparel-products__image" src="/assets/img/home/apparel_products/vneck2.jpg" alt="" >
+                        <h1 class="apparel-products__h1">V Neck</h1>
+                    </div>
+                    <div class="apparel-products__product ">
+                        <img class="apparel-products__image" src="/assets/img/home/apparel_products/ladies2.jpg" alt="" >
+                        <h1 class="apparel-products__h1">Ladies</h1>
+                    </div>
+                    <div class="apparel-products__product apparel-products__product--right-top">
+                        <img class="apparel-products__image" src="/assets/img/home/apparel_products/pocket.jpg" alt="" >
+                        <h1 class="apparel-products__h1">With Pocket</h1>
+                    </div>
+                    <div class="apparel-products__product apparel-products__product--left-bottom">
+                        <img class="apparel-products__image" src="/assets/img/home/apparel_products/Kids.jpg" alt="" >
+                        <h1 class="apparel-products__h1">Youth/Infant</h1>
+                    </div>
+                    <div class="apparel-products__product ">
+                        <img class="apparel-products__image" src="/assets/img/home/apparel_products/performance2.jpg" alt="" >
+                        <h1 class="apparel-products__h1">Performance</h1>
+                    </div>
+                    <div class="apparel-products__product">
+                        <img class="apparel-products__image" src="/assets/img/home/apparel_products/cappp3.jpg" alt="" >
+                        <h1 class="apparel-products__h1">Caps & Hats</h1>
+                    </div>
+                    <div class="apparel-products__product apparel-products__product--right-bottom">
+                        <img class="apparel-products__image" src="/assets/img/home/apparel_products/polo.jpg" alt="" >
+                        <h1 class="apparel-products__h1">Polos</h1>
+                    </div>
+                </div>
+            
+            </section>
+    
+           
+            
+        </div>
         
     </div>
+    
     
 </div>
