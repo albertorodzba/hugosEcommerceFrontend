@@ -1,0 +1,23 @@
+.container{
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: var(--padding-Y-s) var(--padding-X-s);
+}
+
+.list-items{
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+    margin-bottom: var(--margin-Y-s) ;
+}
+
+.list-items:last-child{
+    margin-bottom: 0;
+}
+
+.list-items__item:hover{
+    background-color: var(--primary-color-subtle);
+}
+.list-items__h2{
+    margin-bottom: var(--margin-Y-xs);
+}

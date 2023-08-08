@@ -17,15 +17,29 @@
         </div>
 
         <div class="container__sample container__sample--others" >
-            <h3 class="container__text">Others</h3>
-            <button (click)="OnChangeGallery('Others')" class="container__button">View more</button>
+            <h3 class="container__text">Business cards & Marketing products</h3>
+            <button (click)="OnChangeGallery('Marketing Products')" class="container__button">View more</button>
         </div>
+
+    </div>
+    
+    <div class="gallery-container">
+        
+        <div class="gallery-container__flex">
+            <h1 class="container__title">{{gallerySelected}}</h1>
+            <div class="gallery">
+                <img *ngFor="let path of galleryPaths" [src]="path" alt="" class="gallery__image">
+            </div>
+        </div>
+    
+        <div *ngIf="gallerySelected==='Marketing Products'" class="gallery-container__flex">
+            <h1 class="container__title">Grand Format</h1>
+            <div  class="gallery">
+                <img *ngFor="let path of galleryPaths2" [src]="path">
+            </div>
+        </div>
+    
     </div>
 
-    <h1 class="container__title">{{gallerySelected}}</h1>
-
-    <div class="gallery">
-        <img *ngFor="let path of galleryPaths" [src]="path" alt="" class="gallery__image">
-    </div>
-
+    
 </div>

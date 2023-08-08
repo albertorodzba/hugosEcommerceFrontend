@@ -1,82 +1,65 @@
 <div class="container">
 
-    <div class="banner">
-        <div class="banner__text">
-            <p class="banner__p banner__p--blue">WE PRINT </p>
-            <p class="banner__p banner__p--blue banner__p--indent"> CUSTOM</p>
-            <p class="banner__p banner__p--red">T-SHIRTS</p>
-        </div>
-    </div>
+    <aside class="side-menu">
 
-    <!--Menu bar-->
+        <div class="side-menu__category">
+    
+            <div class="side-menu__title-container side-menu__title-container--red">
+                <h2 class="side-menu__h2">{{'Apparel'}}</h2>
+            </div>
+
+            <p *ngFor="let item of apparel" class="side-menu__item">{{item}}</p>
+            
+        </div>
+
+        <div class="side-menu__category">
+    
+            <div class="side-menu__title-container side-menu__title-container--blue">
+                <h2 class="side-menu__h2">{{'Marketing Products'}}</h2>
+            </div>
+
+            <p *ngFor="let item of marketingProducts" class="side-menu__item">{{item}}</p>
+            
+        </div>
+
+        <div class="side-menu__category ">
+    
+            <div class="side-menu__title-container side-menu__title-container--green">
+                <h2 class="side-menu__h2">{{'Grand Format'}}</h2>
+            </div>
+
+            <p *ngFor="let item of grandFormat; let i = index" class="side-menu__item">{{item}}</p>
+            
+        </div>
+    </aside>
+
+  
+
+    <!--***************Menu bar*************-->
     <!-- <div class="products__menu">
-        
-        <ul class="products__options">
-    
-            <li class="products__option"><a class="products__a">Apparel</a></li>
-    
-            <hr *ngIf="isMenuOpen"> 
-    
-            <li class="products__option"><a class="products__a">Bussines Cards</a></li>
-    
-            <hr *ngIf="isMenuOpen"> 
-            
-            <li class="products__option">
-            <a class="products__a">Marketing Materials</a>
-            </li>
-    
-            <hr *ngIf="isMenuOpen"> 
-    
-            <li class="products__option"><a class="products">Signs & Banners</a></li>
-            
-            <hr *ngIf="isMenuOpen">
-            
-            <li class="products__option"><a class="products">Stickers & Labels</a></li>
-        </ul>
+        <div class="products__icon-button">
+            <span class="material-icons-outlined">menu</span>
+            <p class="products__p">
+                Open menu products
+            </p>
+        </div>
     </div> -->
 
+
+
     <div class="sub-container">
-
-        <aside class="side-menu">
-
-            <div class="side-menu__category">
-        
-                <div class="side-menu__title-container side-menu__title-container--red">
-                    <h2 class="side-menu__h2">{{'Apparel'}}</h2>
-                </div>
-
-                <p *ngFor="let item of apparel" class="side-menu__item">{{item}}</p>
-                
+        <div class="banner">
+            <div class="banner__text">
+                <p class="banner__p banner__p--blue">WE PRINT </p>
+                <p class="banner__p banner__p--blue banner__p--indent"> CUSTOM</p>
+                <p class="banner__p banner__p--red">T-SHIRTS</p>
             </div>
+        </div>
 
-            <div class="side-menu__category">
-        
-                <div class="side-menu__title-container side-menu__title-container--blue">
-                    <h2 class="side-menu__h2">{{'Marketing Products'}}</h2>
-                </div>
-
-                <p *ngFor="let item of marketingProducts" class="side-menu__item">{{item}}</p>
-                
-            </div>
-
-            <div class="side-menu__category ">
-        
-                <div class="side-menu__title-container side-menu__title-container--green">
-                    <h2 class="side-menu__h2">{{'Grand Format'}}</h2>
-                </div>
-
-                <p *ngFor="let item of grandFormat; let i = index" class="side-menu__item">{{item}}</p>
-                
-            </div>
-              
-        </aside>
-
-        
-         
         <div class="general-products">
             <!--BESTSELLERS-->
             
-            <h4 class="bestsellers__title">Bestsellers</h4>
+            <!-- <h4 class="bestsellers__title">Bestsellers</h4>
             <div class="bestsellers">
         
                 <span class="bestsellers__icon material-icons-outlined">
@@ -170,39 +153,28 @@
                             <div class="bestsellers__color"></div>
                         </div>
                     </div>
-        
                 </div>
                 <span class="bestsellers__icon material-icons-outlined">
                     arrow_forward_ios
                 </span>
-            </div>
+            </div> -->
 
             <!--SECOND GRID, OTHER PRODUCTS-->
-           <section class="other-products-section">
-            <div class="other-products-section__title-container">
-                <h1 class="other-products-section__title">Cuztomized marketing materials and signage for your Business 
-                </h1>
-            </div>
+            <section class="other-products-section">
+                <div class="other-products-section__title-container">
+                    <h1 class="other-products-section__title">Cuztomized marketing materials and signage for your Business 
+                    </h1>
+                </div>
 
-           <div class="other-products">
-               <div class="product">
-                   <h1 class="product__title">Bussines Cards</h1>
-                   <img src="" alt="" class="product__image">
-               </div>
-               <div class="product">
-                   <h1 class="product__title">Flyers & Brochures</h1>
-                   <img src="" alt="" class="product__image">
-               </div>
-               <div class="product">
-                   <h1 class="product__title">Banners & Signs</h1>
-                   <img src="" alt="" class="product__image">
-               </div>
-               <div class="product">
-                   <h1 class="product__title">Window & Car Wraps</h1>
-                   <img src="" alt="" class="product__image">
-               </div>
-           </div>
-       </section>
+                <div class="other-products">
+                    <div class="product">
+                        <img src="/assets/img/home/Business_Cards.jpg" alt="" class="product__image">
+                    </div>
+                    <div class="product">
+                        <img src="/assets/img/home/Shirts.jpg" alt="" class="product__image">
+                    </div>
+                </div>
+            </section>
 
     
             <!--START DESIGNING BUTTON-->
@@ -212,7 +184,7 @@
     
                 <!--GRID APPAREL PRODUCTS-->
                 <h2 class="general-products__title">
-                    Apparel Products
+                    Custom printing and embroidery
                 </h2>
     
                 <div class="apparel-products">
@@ -252,7 +224,6 @@
             
             </section>
     
-           
             
         </div>
         

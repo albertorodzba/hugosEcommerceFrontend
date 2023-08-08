@@ -8,12 +8,14 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 
 
+
 @NgModule({
   declarations: [
     HomeComponent,
     AboutUsComponent,
     GalleryComponent,
-    ContactUsComponent
+    ContactUsComponent,
+
   ],
   imports: [
     CommonModule,

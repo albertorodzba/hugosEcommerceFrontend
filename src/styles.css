@@ -7,7 +7,7 @@
   --primary-color: #30427e;
   --secondary-color: #cc2a2d;
   --secondary-color-emphasis: #a72325;
-  --primary-color-subtle: #908cb8;
+  --primary-color-subtle: #404e7b;
   --primary-color-emphasis: #605b8b;
   --gray-subtle: #d8d8d8;
   --gray-super-light: #f2f2f2;
@@ -18,6 +18,7 @@
   --border-radius-s: 2px;
   --black: #0f0f0f;
   --white: white;
+  --green: #519f43;
   --selected: var(--primary-color);
 
   --margin-X-l: 3em;
@@ -47,18 +48,19 @@
   --font-size-medium: 24px;
   --font-size-large: 32px;
 
-  --breakpoint-m: 940px;
+  --breakpoint-m: 940px; 
   --breakpoint-s: 540px;
   --breakpoint-xs: 320px;
   
 
-  --banner-height: 25rem;
+  --banner-height: 16rem;
   --banner-fontsize-xl: 5em;
   --banner-fontsize-l: 4em;
   --banner-fontsize-m: 3em;
   --banner-fontsize-s: 2em;
 
   --menubar-hover:#b5b5b5 ;
+  --container-size: 80rem;
 }
 
 @font-face {
@@ -86,8 +88,9 @@ html,
 body {
   font-family: "TTCommonsRegular";
   /* font-weight: 100; */
+  font-size: 18px;
 
-  height: 100%;
+
 }
 
 *{
@@ -117,6 +120,14 @@ a {
 
   margin: 0;
   padding: 0;
+}
+
+a:visited{
+  color: var(--white);
+}
+
+a:link{
+  color: var(--white);
 }
 
 li {

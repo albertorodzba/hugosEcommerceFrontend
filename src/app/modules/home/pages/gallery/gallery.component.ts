@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ScreenprintingPaths, EmbroideryPaths, OtherPaths } from 'src/app/core/data/galleryPaths';
+import { ScreenprintingPaths, EmbroideryPaths, MarketingPaths, GrandFormatPaths } from 'src/app/core/data/galleryPaths';
 
 @Component({
   selector: 'app-gallery',
@@ -9,7 +9,7 @@ import { ScreenprintingPaths, EmbroideryPaths, OtherPaths } from 'src/app/core/d
 export class GalleryComponent {
   galleryPaths: string[] = ScreenprintingPaths;
   gallerySelected: string = "Screenprinting";
-  
+  galleryPaths2: string[] = GrandFormatPaths;
   constructor(){
     console.log(this.galleryPaths.length);
   }
@@ -23,8 +23,10 @@ export class GalleryComponent {
       this.galleryPaths = EmbroideryPaths;
     }
     else{
-      this.galleryPaths = OtherPaths;
+      this.galleryPaths = MarketingPaths;
+
     }
     this.gallerySelected = gallery;
   }
+
 }
