@@ -44,6 +44,33 @@
   margin-top: var(--margin-Y-xs);
 }
 
+.navbar__social-network{
+  align-items: center;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  padding: var(--padding-Y-xs) var(--padding-X-xs);
+}
+
+.navbar__social-network:last-child{
+  margin-left: var(--margin-X-s);
+}
+
+.navbar__social-network-img{
+  width: 30px;
+  height: 30px;
+  filter: invert();
+  vertical-align: center;
+}
+
+.navbar__a--social-network{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .navbar__content--middle {
   align-items: center;
   display: flex;
@@ -150,6 +177,10 @@ hr{
   
   .navbar__menu-options{
     display: none;
+  }
+
+  .navbar__contactInfo{
+    align-items: center;
   }
 }
 

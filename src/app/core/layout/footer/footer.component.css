@@ -15,5 +15,21 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 575px) {
+    .footer__section{
+        align-items: center;
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .footer__element:last-child{
+        margin-top: var(--margin-Y-m);
+    }
+
+    .footer__element, .footer__list-options{
+        align-items: center;
+    }
 
 }

@@ -53,11 +53,16 @@ export class NavbarComponent implements AfterViewInit {
 
   ChangeMenuVisibility(): void {
     this.isMenuOpen = !this.isMenuOpen;
-    console.log(this.isMenuOpen);
+    if(this.isProductsMenuOpen === true){
+      this.isProductsMenuOpen = false;
+    }
   }
 
   ChangeProductsVisibility(){
     this.isProductsMenuOpen = !this.isProductsMenuOpen;
+    if(this.isMenuOpen === true){
+      this.isMenuOpen = false;
+    }
   }
 
   /**Add menu options as navbar__menu's children */
