@@ -1,0 +1,44 @@
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: var(--container-size);
+}
+
+.container__banner {
+  align-items: center;
+  background-image: url(/assets/img/common/3.jpg);
+  background-position: top;
+  background-size: cover;
+  color: var(--white);
+  display: flex;
+  font-size: var(--banner-fontsize-l);
+  height: var(--banner-height);
+  justify-content: center;
+  margin-bottom: var(--margin-Y-s);
+}
+
+.container__title {
+  width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .container__banner {
+    font-size: var(--banner-fontsize-m);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container__banner {
+    font-size: var(--banner-fontsize-s);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container__banner {
+    font-size: var(--banner-fontsize-xs);
+  }
+}

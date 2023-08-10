@@ -53,14 +53,14 @@
   --breakpoint-xs: 320px;
   
 
-  --banner-height: 16rem;
+  --banner-height: 200px;
   --banner-fontsize-xl: 5em;
   --banner-fontsize-l: 4em;
   --banner-fontsize-m: 3em;
   --banner-fontsize-s: 2em;
 
   --menubar-hover:#b5b5b5 ;
-  --container-size: 80rem;
+  --container-size: 1366px;
 }
 
 @font-face {

@@ -46,7 +46,7 @@
 
 .navbar__social-network{
   align-items: center;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   border: none;
   border-radius: 50px;
   display: flex;
@@ -61,7 +61,7 @@
 .navbar__social-network-img{
   width: 30px;
   height: 30px;
-  filter: invert();
+  /* filter: invert(); */
   vertical-align: center;
 }
 

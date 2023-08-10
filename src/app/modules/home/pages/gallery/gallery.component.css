@@ -1,12 +1,19 @@
+/* :host{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+} */
+
 .container{
   /* width: var(--container-size); */
 }
 
 .container__banner {
   align-items: center;
-  background-image: url(/assets/img/common/hugosMesadetrabajo.jpg);
+  background-image: url(/assets/img/common/1.jpg);
   background-position: top;
   background-size: cover;
+  background-repeat: no-repeat;
   color: var(--white);
   display: flex;
   font-size: var(--banner-fontsize-l);
@@ -19,7 +26,7 @@
   background-color: aqua;
   color: var(--white);
   display: grid;
-  height: 16rem;
+  height: 13rem;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: var(--margin-Y-l);
   min-width: 0;
@@ -144,7 +151,6 @@
 @media screen and (max-width: 540px) {
 
   .container__banner {
-    height: 15rem;
     font-size: var(--banner-fontsize-s);
   }
   
@@ -168,7 +174,6 @@
 @media screen and (max-width: 320px) {
 
   .container__banner {
-    height: 10rem;
     font-size: var(--banner-fontsize-xs);
   }
 
