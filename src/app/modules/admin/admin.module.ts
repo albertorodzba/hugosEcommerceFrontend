@@ -11,6 +11,8 @@ import { BronchureComponent } from './components/bronchure/bronchure.component';
 import { CardComponent } from './components/card/card.component';
 import { CategoryComponent } from './components/category/category.component';
 import { CoatingComponent } from './components/coating/coating.component';
+import { TableComponent } from 'src/app/shared/table/table.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -27,7 +29,8 @@ import { CoatingComponent } from './components/coating/coating.component';
   imports: [
     CommonModule,
     AdminRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule
   ]
 })
 export class AdminModule { }

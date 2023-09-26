@@ -1,63 +1,6 @@
 <div class="container">
 
-    <!-- <h1 class="container__title">PANEL DE ADMINISTRADOR</h1>
-
-    <div class="tables-buttons">
-        <button type="button" class="tables-buttons__button">1</button>
-        <button type="button" class="tables-buttons__button">2</button>
-        <button type="button" class="tables-buttons__button">3</button>
-        <button type="button" class="tables-buttons__button">4</button>
-        <button type="button" class="tables-buttons__button">5</button>
-        <button type="button" class="tables-buttons__button">6</button>
-        <button type="button" class="tables-buttons__button">7</button>
-        <button type="button" class="tables-buttons__button">8</button>
-        <button type="button" class="tables-buttons__button">9</button>
-        <button type="button" class="tables-buttons__button">10</button>
-    </div>
-
-    
-    
-        <!-- <div class="button-container">
-            <button class="button-container__button" (click)="createTable()">Crear nueva tabla</button>
-        </div>
-    
-    <form [formGroup]= "addTableForm" class="form">
-        
-        <div class="form-group">
-            <label  for="" class="form-group__label">Titulo de la tabla</label>
-            <input FormControl="title" type="text" class="form-group__input" placeholder="T - shirt">
-        </div>
-        
-        <div *ngFor="let control of returnArray.controls; let i = index" class="form__dynamic-form " formArrayName="dynamicForm">
-            <div [formGroupName]="i" class="form__groups-container">
-
-                <div class="form-group">
-                    <label for="" class="form-group__label">Nombre de la columna</label>
-                    <input [formControlName]="'column'" type="text" class="form-group__input" placeholder="eg. Size">
-                </div>
-                <div  class="form-group">
-                    <label for="" class="form-group__label">Descripcion de la columna</label>
-                    <input [formControlName]="'columnDescription'" type="text" class="form-group__input" placeholder="Shirt size">
-                </div>
-                <div  class="form-group">
-                    <label for="" class="form-group__label">Ejemplo del tipo de dato</label>
-                    <input [formControlName]="'columnExample'" type="text" class="form-group__input" placeholder="Extra large">
-                </div>
-            </div>
-            
-        </div>
-    </form>
-
-    <div class="tablesContainer">
-        <table class="table">
-            <tr class="table__row">
-                <th class="table__header"></th>
-            </tr>
-            <tr class="table__row">
-                <td class="table__description"></td>
-            </tr>
-        </table>
-    </div> -->
+   
     <div class="tabs">
         <ul class="tabs__ulist">
             <li *ngFor="let tab of tabs" [routerLink]="tab.tab_url" class="tabs__item-tab">{{tab.tab_name}}</li>

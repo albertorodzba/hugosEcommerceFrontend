@@ -1,0 +1,39 @@
+/*THIS COMPONENT IS USING "MOBILE FIRST DESIGN TECHNIQUE*/
+
+:host {
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 100px);
+}
+.container {
+  width: 500px;
+  height: 100%;
+}
+.form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+	margin-top: var(--margin-Y-m);
+  padding: var(--padding-Y-m) var(--padding-X-s);
+  position: relative;
+}
+
+.form__img {
+  width: 22vh;
+}
+
+.form__button {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border-radius: var(--border-radius-l);
+  height: var(--form-control-m);
+  width: 100%;
+}
+
+.form__button:hover {
+  background-color: var(--secondary-color-emphasis);
+}
+
+.form-group__input-text {
+  height: var(--form-control-m);
+}

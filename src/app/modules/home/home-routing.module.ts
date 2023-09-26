@@ -6,6 +6,8 @@ import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { TempCardsFormComponent } from './pages/temp/temp-cards-form/temp-cards-form.component';
 import { TempContactUsFormComponent } from './pages/temp/temp-contact-us-form/temp-contact-us-form.component';
+import { TempQuotesFormComponent } from './pages/temp/temp-quotes-form/temp-quotes-form.component';
+import { TempShirtsFormComponent } from './pages/temp/temp-shirts-form/temp-shirts-form.component';
 
 const routes: Routes = [
   {
@@ -28,6 +30,14 @@ const routes: Routes = [
   {
     path: 'cards',
     component: TempCardsFormComponent
+  },
+  {
+    path: 'quote',
+    component: TempQuotesFormComponent
+  },
+  {
+    path: 'shirts',
+    component:TempShirtsFormComponent
   }
 ];
 

@@ -28,21 +28,19 @@ export class HomeComponent {
 
   marketingProducts: string[] = [
     'Business Cards',
-    'Marketing Products',
     'Postcards',
     'Flyers & Brochures',
     'Canvas',
     'Car Magnets',
     'Yard Signs',
-    'Label',
   ];
 
   grandFormat: string[] = [
-    'Signs',
-    'Grand Format',
-    'Banner stand',
+    'Banner',
+    'Banner Stand',
+    'PVC Signs',
+    'Alluminum Signs',
     'Windows Graphics',
-    'Stickers',
     'Wall Decals',
     'Posters',
   ];

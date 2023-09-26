@@ -61,6 +61,8 @@
 
   --menubar-hover:#b5b5b5 ;
   --container-size: 1366px;
+
+  --form-control-m: 3em;
 }
 
 @font-face {
@@ -89,8 +91,6 @@ body {
   font-family: "TTCommonsRegular";
   /* font-weight: 100; */
   font-size: 18px;
-
-
 }
 
 *{
@@ -135,8 +135,16 @@ li {
   text-align: center;
 }
 
+button{
+  background-color: transparent;
+  cursor: pointer;
+  border: var(--border-size) solid transparent;
+  padding: var(--padding-Y-xs) var(--padding-X-xs);
+}
 
 .form-group{
+  display: flex;
+  flex-direction: column;
   margin-bottom: var(--margin-Y-s);
   width: 100%;
 }

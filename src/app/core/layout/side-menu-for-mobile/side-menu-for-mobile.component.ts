@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class SideMenuForMobileComponent {
 
-  
   apparel: string[] = [
     'T-Shirts',
     'Polo Shirts',
@@ -19,21 +18,19 @@ export class SideMenuForMobileComponent {
 
   marketingProducts: string[] = [
     'Business Cards',
-    'Marketing Products',
     'Postcards',
     'Flyers & Brochures',
     'Canvas',
     'Car Magnets',
     'Yard Signs',
-    'Label',
   ];
 
   grandFormat: string[] = [
-    'Signs',
-    'Grand Format',
-    'Banner stand',
+    'Banner',
+    'Banner Stand',
+    'PVC Signs',
+    'Alluminum Signs',
     'Windows Graphics',
-    'Stickers',
     'Wall Decals',
     'Posters',
   ];
