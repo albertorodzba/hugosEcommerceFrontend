@@ -1,0 +1,14 @@
+.message-container {
+  background-color: white;
+  height: auto;
+  width: auto;
+  display: flex;
+}
+.message-container__icon {
+  flex-grow: 1;
+}
+.message-container__message {
+  flex-grow: 2;
+}
+.message-container__span {
+}

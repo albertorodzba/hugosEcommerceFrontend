@@ -14,7 +14,10 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
   },
-
+  {
+    path: 'gallery',
+    component: GalleryComponent
+  },
   {
     path: 'about-us',
     component: AboutUsComponent,
@@ -22,10 +25,6 @@ const routes: Routes = [
   {
     path: 'contact-us',
     component: TempContactUsFormComponent
-  },
-  {
-    path: 'gallery',
-    component: GalleryComponent
   },
   {
     path: 'cards',
@@ -38,7 +37,7 @@ const routes: Routes = [
   {
     path: 'shirts',
     component:TempShirtsFormComponent
-  }
+  },
 ];
 
 @NgModule({

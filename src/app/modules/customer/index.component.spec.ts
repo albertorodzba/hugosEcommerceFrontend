@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { shirtsTableComponent } from './shirts-table.component';
+import { IndexComponent } from './index.component';
 
-describe('shirtsTableComponent', () => {
-  let component: shirtsTableComponent;
-  let fixture: ComponentFixture<shirtsTableComponent>;
+describe('IndexComponent', () => {
+  let component: IndexComponent;
+  let fixture: ComponentFixture<IndexComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ shirtsTableComponent ]
+      declarations: [ IndexComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(shirtsTableComponent);
+    fixture = TestBed.createComponent(IndexComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

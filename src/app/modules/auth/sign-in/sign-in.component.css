@@ -22,6 +22,11 @@
   width: 22vh;
 }
 
+
+.form__buttons-container{
+  display: flex;
+  width: 100%;
+}
 .form__button {
   background-color: var(--secondary-color);
   color: var(--white);
@@ -37,3 +42,20 @@
 .form-group__input-text {
   height: var(--form-control-m);
 }
+
+.form__button--transparent {
+  background-color: transparent;
+  color: var(--black);
+  border-radius: var(--border-radius-l);
+  height: var(--form-control-m);
+  width: 100%;
+}
+.form__button--transparent:hover {
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+}
+
+.form__button:first-child{
+  margin-right: var(--margin-X-xs);
+}
+

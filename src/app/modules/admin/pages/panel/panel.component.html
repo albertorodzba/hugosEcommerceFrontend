@@ -1,6 +1,10 @@
-<div class="container">
+<nav>
+    <app-admin-navbar>
+        
+    </app-admin-navbar>
+</nav>
 
-   
+<div class="container">
     <div class="tabs">
         <ul class="tabs__ulist">
             <li *ngFor="let tab of tabs" [routerLink]="tab.tab_url" class="tabs__item-tab">{{tab.tab_name}}</li>

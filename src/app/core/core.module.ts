@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { FooterComponent } from './layout/footer/footer.component';
 import { SideMenuForMobileComponent } from './layout/side-menu-for-mobile/side-menu-for-mobile.component';
 import { GeneralMenuForMobileComponent } from './layout/general-menu-for-mobile/general-menu-for-mobile.component';
+import { AdminNavbarComponent } from './layout/admin-navbar/admin-navbar.component';
 
 
 
@@ -14,7 +15,8 @@ import { GeneralMenuForMobileComponent } from './layout/general-menu-for-mobile/
     NavbarComponent,
     FooterComponent,
     SideMenuForMobileComponent,
-    GeneralMenuForMobileComponent
+    GeneralMenuForMobileComponent,
+    AdminNavbarComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +26,8 @@ import { GeneralMenuForMobileComponent } from './layout/general-menu-for-mobile/
   ],
   exports:[
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    AdminNavbarComponent
 
   ]
 })

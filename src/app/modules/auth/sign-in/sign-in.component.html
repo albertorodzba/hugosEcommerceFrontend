@@ -10,7 +10,10 @@
             <label for="" class="form-group__title">Password</label>
             <input type="password" class="form-group__input-text" placeholder="">
         </div>
-        <button type="button" class="form__button">Sign In!</button>
+        <div class="form__buttons-container">
+            <button type="button" class="form__button form__button--transparent">Cancelar</button> 
+            <button type="button" class="form__button" (click)="login()">Sign In!</button>
+        </div>
     </form>
 
 </div>

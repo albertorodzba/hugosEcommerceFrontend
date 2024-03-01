@@ -23,7 +23,6 @@ import { TempShirtsFormComponent } from './pages/temp/temp-shirts-form/temp-shir
     TempCardsFormComponent,
     TempQuotesFormComponent,
     TempShirtsFormComponent,
-
   ],
   imports: [
     CommonModule,
